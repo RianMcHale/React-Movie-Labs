@@ -11,6 +11,7 @@ import Drawer from "@mui/material/Drawer";
 import MovieReviews from "../movieReviews"
 
 
+
 const root = {
     display: "flex",
     justifyContent: "center",
@@ -59,7 +60,7 @@ const MovieDetails = ({ movie }) => {
         />
         <Chip label={`Released: ${movie.release_date}`} />
       </Paper>
-      <Fab
+            <Fab
         color="secondary"
         variant="extended"
         onClick={() =>setDrawerOpen(true)}
