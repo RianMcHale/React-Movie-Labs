@@ -24,8 +24,7 @@ const HomePage = (props) => {
     else setGenreFilter(value);
   };
 
-
-
+  
 
   useEffect(() => {
     fetch(
