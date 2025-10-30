@@ -22,7 +22,6 @@ const formControl =
   };
 
 export default function FilterMoviesCard(props) {
-
   const { data, error, isPending, isError } = useQuery({
     queryKey: ['genres'],
     queryFn: getGenres,
@@ -52,6 +51,7 @@ export default function FilterMoviesCard(props) {
   const handleGenreChange = (e) => {
     handleChange(e, "genre", e.target.value);
   };
+
 
   return (
     <Card 
