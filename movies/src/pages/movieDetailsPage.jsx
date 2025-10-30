@@ -24,6 +24,7 @@ const MoviePage = (props) => {
   }
 
 
+
   return (
     <>
       {movie ? (

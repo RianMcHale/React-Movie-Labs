@@ -29,7 +29,6 @@ export default function MovieReviews({ movie }) {
   
   const reviews = data.results;
 
-
   return (
     <TableContainer component={Paper}>
       <Table sx={{minWidth: 550}} aria-label="reviews table">

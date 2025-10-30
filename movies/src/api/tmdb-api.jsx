@@ -15,6 +15,7 @@ export const getMovies = () => {
 };
 
 
+
 export const getMovie = (args) => {
   //console.log(args)
   const [, idPart] = args.queryKey;
@@ -34,9 +35,7 @@ export const getMovie = (args) => {
  });
 };
 
-
-
-  export const getMovieImages = ({ queryKey }) => {
+export const getMovieImages = ({ queryKey }) => {
     const [, idPart] = queryKey;
     const { id } = idPart;
     return fetch(
@@ -52,10 +51,10 @@ export const getMovie = (args) => {
     .catch((error) => {
       throw error
    });
-  };
+};
 
 
-  export const getMovieReviews = ({ queryKey }) => {
+export const getMovieReviews = ({ queryKey }) => {
     const [, idPart] = queryKey;
     const { id } = idPart;
     return fetch(
@@ -71,9 +70,10 @@ export const getMovie = (args) => {
     .catch((error) => {
       throw error
    });
-  };
+};
 
-  export const getGenres = () => {
+
+export const getGenres = () => {
     return fetch(
       "https://api.themoviedb.org/3/genre/movie/list?api_key=" +
         import.meta.env.VITE_TMDB_KEY +
@@ -89,6 +89,7 @@ export const getMovie = (args) => {
     .catch((error) => {
       throw error
    });
-  };
+};
+
 
 
