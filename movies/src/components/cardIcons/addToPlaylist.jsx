@@ -4,7 +4,10 @@ import IconButton from "@mui/material/IconButton";
 
 const AddToPlaylistIcon = ({ movie }) => {
   return (
-    <IconButton color="primary" aria-label="add to must watch list">
+    <IconButton
+      aria-label="Add to must watch list"
+      color="primary"
+    >
       <PlaylistAddIcon />
     </IconButton>
   );

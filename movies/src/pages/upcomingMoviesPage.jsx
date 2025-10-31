@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import PageTemplate from "../components/templateMovieListPage";
 import { getUpcomingMovies } from "../api/tmdb-api";
-import AddToFavoritesIcon from '../components/cardIcons/addToFavorites'
-// or temporarily import the same icon your home page uses
+import AddToPlaylistIcon from "../components/cardIcons/addToPlaylist"; 
 
 const UpcomingMoviesPage = () => {
   const [movies, setMovies] = useState([]);
@@ -15,7 +14,7 @@ const UpcomingMoviesPage = () => {
     <PageTemplate
       title="Upcoming Movies"
       movies={movies}
-      action={(movie) => <AddToFavoritesIcon movie={movie} />}
+      action={(movie) => <AddToPlaylistIcon movie={movie} />} 
     />
   );
 };
